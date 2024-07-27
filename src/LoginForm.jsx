@@ -31,7 +31,7 @@ function LoginForm() {
         <h1>Login Page</h1>
         <div>
             <form onSubmit={handleSubmit}> 
-                {welcome? (<h3>Welcome {userName}! </h3>) : (
+                {welcome? (<span><h3>Welcome user! </h3></span>) : (
                     <>
                     {validateUser && <h3>Invalid username or password</h3>}
                     <label>Username:</label>
